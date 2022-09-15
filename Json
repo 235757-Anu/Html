@@ -1,0 +1,21 @@
+{
+	"COLLEGE":
+		[
+			{
+				"Name":"Arya",
+				"Semester":3,
+				"Branch":"CS"
+			},
+			{
+				"Name":"Adithya",
+				"Semester":4,
+				"Branch":"EC"
+			},
+			{
+				"Name":"Adarsh",
+				"Semester":5,
+				"Branch":"EEE"
+			}
+		]
+}
+
