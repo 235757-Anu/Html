@@ -1,0 +1,163 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  .fakeimg {
+    height: 250px;
+    background: #aaa;
+  }
+  </style>
+</head>
+<body>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>Contact Me</h1>-->
+  <!--<p>Resize this responsive page to see the effect!</p> -->
+<!--</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="file:///C:/Users/ustjavafsdb115/Desktop/Html/status.html">Status</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="file:///C:/Users/ustjavafsdb115/Desktop/Html/Bootstrap.html">Home</a></li>
+        <li><a href="file:///C:/Users/ustjavafsdb115/Desktop/Html/Education.html">Education</a></li>
+        <li><a href="file:///C:/Users/ustjavafsdb115/Desktop/Html/Gallery.html">Gallery</a></li>
+        <li><a href="file:///C:/Users/ustjavafsdb115/Desktop/Html/Project.html">Projects</a></li>
+        <li><a href="file:///C:/Users/ustjavafsdb115/Desktop/Html/Form.html">Form</a></li>
+      </ul>
+    </div>
+    
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-10">
+          
+            
+            
+      <br>
+      <br>
+      <br>
+    </div>
+    
+  </div>
+</div>
+
+
+
+</body>
+</html>-->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+ <title>Contact Details</title>
+
+ <meta charset="utf-8">
+
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+ <script>
+
+ function testVariable() {
+
+ var sn = document.getElementById("n1").value;
+
+ var se = document.getElementById("e1").value;
+
+ var sbe = document.getElementById("sub1").value;var te = document.getElementById("t1").value;
+ var result = sn + ' ' + se+ ' ' +sbe+ ' ' +te;
+ alert(result)
+ window.print();
+
+}
+</script>
+
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+<div class="container-fluid">
+<div class="navbar-header">
+     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+          <span class="icon-bar"></span> 
+
+</button>
+ </div> <div class="collapse navbar-collapse" id="myNavbar">
+<ul class="nav navbar-nav">
+    <a class="navbar-brand" href="file:///C:/Users/ustjavafsdb115/Desktop/Html/status.html">Status</a>
+    <li><a href="file:///C:/Users/ustjavafsdb115/Desktop/Html/Bootstrap.html">Home</a></li>
+    <li><a href="file:///C:/Users/ustjavafsdb115/Desktop/Html/Education.html">Education</a></li>
+    <li><a href="file:///C:/Users/ustjavafsdb115/Desktop/Html/Gallery.html">Gallery</a></li>
+    <li><a href="file:///C:/Users/ustjavafsdb115/Desktop/Html/Project.html">Projects</a></li>
+    <li><a href="file:///C:/Users/ustjavafsdb115/Desktop/Html/Form.html">Form</a></li>
+</ul>
+ </div>
+ </div>
+</nav>
+
+<div class="mt-5 conatiner">
+    <div class="text-center">
+<h3 class="text-primary">Please contact me here.</h3>
+
+</div>
+<div class=" d-flex align-items-center justify-content-center">
+<div class="bg-white col-md-4">
+<div class="p-4 rounded shadow-md">
+<div>
+<label for="name" class="form-label">Your Name</label>
+<input type="text" id="n1"name="name" class="form-control" placeholder="Your Name" required>
+</div>
+<div class="mt-3">
+
+
+
+<label for="email" class="form-label">Your Email</label>
+<input type="text" id="e1" name="email" class="form-control" placeholder="Your Email" required>
+</div class="mt-3">
+<div class="mt-3">
+<label for="subject" class="form-label">Subject</label>
+<input type="text" id="sub1" name="subject" class="form-control" placeholder="Subject" required>
+</div>
+<div class="mt-3 mb-3">
+<label for="message" class="form-label">Message</label>
+<textarea name="message" id="t1" cols="20" rows="6" class="form-control"
+placeholder="message"></textarea>
+</div>
+
+<br>
+<button id="b1" class="btn btn-primary">
+Submit Form
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
