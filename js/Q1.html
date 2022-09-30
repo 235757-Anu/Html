@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Q1</title>
+
+</head>
+
+<body>
+
+    <br>
+
+    1st Number:<input type="text" id="a"><br><br>
+
+    2nd Number:<input type="text" id="b"><br><br>
+
+    <input type="button" onClick="pro()" value="multiply"/>
+
+    <input type="button" onClick="div()" value="divide"/><br>
+
+    <p>result is:<br>
+
+    <span id="result"></span>
+
+    </p>
+    <script>
+
+        function pro(){
+
+           num1=document.getElementById("a").value;
+
+           num2=document.getElementById("b").value;
+
+           document.getElementById("result").innerHTML=num1*num2;
+
+        }
+
+        function div(){
+
+           num1=document.getElementById("a").value;
+
+           num2=document.getElementById("b").value;
+
+           document.getElementById("result").innerHTML=num1/num2;
+
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>

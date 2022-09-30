@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Q5</title>
+
+</head>
+
+<body>
+
+    <br>
+    1st Number:<input type="text" id="a"><br><br>
+
+    2nd Number:<input type="text" id="b"><br><br>
+
+    3rd Number:<input type="text" id="c"><br><br>
+
+    4th Number:<input type="text" id="d"><br><br>
+
+    5th Number:<input type="text" id="e"><br><br>
+
+    <input type="button" onClick="greater()" value="Result"/>
+
+    <p>greater is:<br>
+
+    <span id="result"></span>
+
+    </p>
+    <script>
+
+        function greater(){
+
+           num1=document.getElementById("a").value;
+
+           num2=document.getElementById("b").value;
+
+           num3=document.getElementById("c").value;
+
+           num4=document.getElementById("d").value;
+
+           num5=document.getElementById("e").value;
+
+           if(num1>num2 && num1>num3 && num1>num4 && num1>num5){
+
+                document.getElementById("result").innerHTML=num1;
+            }
+
+else if(num2>num3 && num2>num4 && num2>num5){
+
+    document.getElementById("result").innerHTML=num2;
+
+}
+
+else if(num3>num4 && num3>num5){
+
+    document.getElementById("result").innerHTML=num3;
+
+}
+
+else if(num4>num5){
+
+    document.getElementById("result").innerHTML=num4;
+}
+
+else {
+
+    document.getElementById("result").innerHTML=num5;
+
+}
+
+/* let n=[num1,num2,num3,num4,num5];
+
+let result=Math.max(...n);
+
+alert("greatest is: "+result);*/
+
+}
+
+</script>
+
+</body>
+
+</html>
