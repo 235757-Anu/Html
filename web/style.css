@@ -1,14 +1,14 @@
 body{
-    background-image: url('ba.jfif');
+    background-image: url('berger.jfif');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
 table{
-    width: 80%;
+    width: 50%;
     margin: 40px auto;
-    background: rgb(124,154,167);
+    background: rgb(39, 155, 10);
 }
 
 table.list{
@@ -23,7 +23,7 @@ td{
 }
 
 tr:nth-child(even), table.list thread> tr{
-    background-color: rgb(204,200,200);
+    background-color: rgb(255, 255, 255);
 }
 
 input[type="text"],input[type="number"]{

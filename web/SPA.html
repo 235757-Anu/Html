@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <title>Single Page Application</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    
+    
+</head>
+
+<body>
+    <center><h1 style="color: rgb(243, 94, 8); font-family:cursive;">FOOD MENU</h1></center>
+    <center><img src="log.jfif"></center>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="foodname">Food Name</label>
+                        <input type="text" name="foodname" id="foodname">
+                    </div>
+                    <div>
+                        <label for="status">Status</label>
+                        <input type="text" name="status" id="status">
+                    </div>
+                    <div>
+                        <label for="qty">Qty</label><br>
+                        <input type="number" name="qty" id="qty">
+                    </div>
+                    <div>
+                        <label for="perPrice">Price</label><br>
+                        <input type="number" name="perPrice" id="perPrice">
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Cancel">
+                    </div>
+                </form>
+                <tr>
+
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>Food Name</th>
+                                <th>Status</th>
+                                <th>Qty</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+                </tr>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>

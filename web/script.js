@@ -15,8 +15,8 @@ function onFormSubmit(e) {
 //Retrieve the data
 function readFormData() {
     var formData = {};
-    formData["customername"] = document.getElementById("customername").value;
-    formData["product"] = document.getElementById("product").value;
+    formData["foodname"] = document.getElementById("foodname").value;
+    formData["status"] = document.getElementById("status").value;
     formData["qty"] = document.getElementById("qty").value;
     formData["perPrice"] = document.getElementById("perPrice").value;
     return formData;
@@ -27,9 +27,9 @@ function insertNewRecord(data) {
     var table = document.getElementById("storeList").getElementsByTagName('tbody')[0];
     var newRow = table.insertRow(table.length);
     cell1 = newRow.insertCell(0);
-		cell1.innerHTML = data.customername;
+		cell1.innerHTML = data.foodname;
     cell2 = newRow.insertCell(1);
-		cell2.innerHTML = data.product;
+		cell2.innerHTML = data.status;
     cell3 = newRow.insertCell(2);
 		cell3.innerHTML = data.qty;
     cell4 = newRow.insertCell(3);
@@ -41,14 +41,14 @@ function insertNewRecord(data) {
 //Edit the data
 function onEdit(td) {
     selectedRow = td.parentElement.parentElement;
-    document.getElementById("customername").value = selectedRow.cells[0].innerHTML;
-    document.getElementById("product").value = selectedRow.cells[1].innerHTML;
+    document.getElementById("foodname").value = selectedRow.cells[0].innerHTML;
+    document.getElementById("status").value = selectedRow.cells[1].innerHTML;
     document.getElementById("qty").value = selectedRow.cells[2].innerHTML;
     document.getElementById("perPrice").value = selectedRow.cells[3].innerHTML;
 }
 function updateRecord(formData) {
-    selectedRow.cells[0].innerHTML = formData.customername;
-    selectedRow.cells[1].innerHTML = formData.product;
+    selectedRow.cells[0].innerHTML = formData.foodname;
+    selectedRow.cells[1].innerHTML = formData.status;
     selectedRow.cells[2].innerHTML = formData.qty;
     selectedRow.cells[3].innerHTML = formData.perPrice;
 }
@@ -64,8 +64,8 @@ function onDelete(td) {
 
 //Reset the data
 function resetForm() {
-    document.getElementById("customername").value = '';
-    document.getElementById("product").value = '';
+    document.getElementById("foodname").value = '';
+    document.getElementById("status").value = '';
     document.getElementById("qty").value = '';
     document.getElementById("perPrice").value = '';
     selectedRow = null;
