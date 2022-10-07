@@ -35,7 +35,7 @@ function insertNewRecord(data) {
     cell4 = newRow.insertCell(3);
 		cell4.innerHTML = data.perPrice;
     cell4 = newRow.insertCell(4);
-        cell4.innerHTML = `<button onClick="onEdit(this)">Edit</button> <button onClick="onDelete(this)">Delete</button>`;
+        cell4.innerHTML = `<button onClick="onEdit(this)">Edit</button> <input type="checkbox" id="del">`;
 }
 
 //Edit the data
@@ -54,13 +54,21 @@ function updateRecord(formData) {
 }
 
 //Delete the data
-function onDelete(td) {
+/*function onDelete(td) {
     if (confirm('Do you want to delete this record?')) {
         row = td.parentElement.parentElement;
         document.getElementById('storeList').deleteRow(row.rowIndex);
         resetForm();
     }
-}
+}*/
+function onDelete(td) {
+if (confirm('Do you want to delete this record?')){
+    ckList = document.querySelectorAll("input[type=checkbox]:checked");
+    ckList.forEach(function(el) {
+      el.parentElement.parentElement.remove();
+    });
+    }
+  }
 
 //Reset the data
 function resetForm() {
